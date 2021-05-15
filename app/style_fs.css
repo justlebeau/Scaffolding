@@ -1,0 +1,292 @@
+
+#logo{
+    float: right;
+    background-color: rgb(300, 300, 300);
+    background: transparent;
+    margin-top: -3%;
+    padding: 0;
+}
+
+body{
+  font-family: Gotham;
+}
+
+summary{
+  font-family: "Gotham Book",Gotham;
+  font-size: 14px;
+  text-align: left;
+  color: #ffffff;
+}
+
+#details-content{
+  position: relative;
+  margin-left: 0px;
+}
+
+#class-tables{
+
+  padding: 2px;
+  padding-left: 20px;
+}
+
+#box-shadow{
+
+  padding: 2px;
+  padding-left: 40px;
+}
+
+/* Headers */
+
+h1, h2{
+    font-family: "Gotham Thin",Gotham;
+  text-align: left;
+  font-size:  20px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+h3{
+  font-family: "Gotham Thin",Gotham;
+  text-align: left;
+  font-size:  20px;
+  margin-bottom: 0px;
+}
+.titleback {
+    background-color: #100F41;
+    margin-top: -45px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 65px;
+    align: center;
+}
+.nw {
+border: 2px solid #989898;
+padding: 2px;
+padding-left: 10px;
+width: 375px;
+margin: 0 20px;
+font-family: "Gotham Book",Gotham;
+  text-align: Left;
+  font-size:  28px;
+  color: #000000;
+}
+.watermark {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 20px;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.a{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-family: "Gotham Book",Gotham;
+  font-size:  24px;
+  color: #ffffff;
+  padding-bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.b{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-family: "Gotham Thin",Gotham;
+  font-size:  24px;
+  color: #ffffff;
+  padding-bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  
+    margin-right: auto;
+    margin-left: auto;
+    /* border-color: darkblue; */
+    border: 10px solid #000000;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 50px;
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 10px;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-width: 50px;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+.titleback {
+    background-color: #000000;
+    margin-top: -45px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 65px;
+    align: center;
+}
+
+p.b{
+  margin-bottom: 0px;
+}
+
+p{
+    margin: 0 0 0px;
+}
+
+.c{
+  font-family: "Gotham Thin",Gotham;
+  text-align: Left;
+  font-size:  28px;
+  color: #000000;
+}
+
+.d{
+  font-family: "Gotham Book",Gotham;
+  text-align: Left;
+  font-size:  24px;
+  color: #ffffff;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #ddd;
+    margin-top: -42px;
+}
+
+.nav-tabs:hover {
+    color: #FFFFFF;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
+
+.nav>li>a:hover {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+.title{
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Gotham Book',Gotham, serif;
+  text-align: center;
+}
+
+
+.title-AssetClass{
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Gotham Book',Gotham, serif;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.title-liabilities{
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Gotham Book',Gotham, serif;
+  text-align: center;
+}
+
+.numbertitle{
+  font-size: 20px;
+  display: inline;
+}
+
+.rt-tr{
+  font-size: 12px;
+}
+
+.rt-thead{
+  font-size: 8px;
+}
+
+.rt-tbody{
+  font-size: 8px;
+}
+
+.rt-align-right {
+    text-align: right;
+}
+
+.textbox{
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 14px;
+  background-color: #fff;
+}
+  
+.watermark {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 20px;
+  color: #fff;
+}
+
+.apexcharter{
+  min-height: 75%;
+}
+
+.apexcharts-title-text{
+  font-family: 'Gotham Thin',Gotham, serif;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.collapsibleTree .node text {
+    font: 10px sans-serif;
+    font-family: 'Gotham Book',Gotham, serif;
+}
+
+.collapsibleTree .link {
+    font: 10px sans-serif;
+    font-family: "Gotham Book",Gotham;
+}
+.collapsibleTree .link {
+    fill: none;
+    stroke: #989898;
+    opacity: .3;
+    stroke-width: 1px;
+}
+.panel-success>.panel-heading {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+.panel-info>.panel-heading {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #000000;
+}
+.panel-info {
+    border-color: #000000;
+}
+.panel-info>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #000000;
+}
+
+
