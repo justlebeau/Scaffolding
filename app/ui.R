@@ -23,7 +23,7 @@ ui <- fluidPage(
                 column(4,
                        div(style="text-align:Left;position:relative;
                 ont-family: 'Gotham Thin',Gotham;font-size:  20px;
-                color: #ffffff;border: 2px solid #989898;",
+                color: #000000;border: 2px solid #989898;",
                            textOutput("nworth")))
             ),
             fluidRow(
