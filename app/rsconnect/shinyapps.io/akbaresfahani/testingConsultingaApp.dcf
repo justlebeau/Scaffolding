@@ -1,0 +1,13 @@
+name: testingConsultingaApp
+title: testingConsultingaApp
+username:
+account: akbaresfahani
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4137108
+bundleId: 4602484
+url: https://akbaresfahani.shinyapps.io/testingConsultingaApp/
+when: 1621117405.94279
+lastSyncTime: 1621117405.94281
+asMultiple: FALSE
+asStatic: FALSE

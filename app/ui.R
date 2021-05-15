@@ -1,21 +1,24 @@
 
 
 ui <- fluidPage(
-    theme = shinytheme("flatly"),
-    br(),br(),
-    titlePanel(
-        title = div(
-            h3(HTML('<div c>
-             PRIVATE AND CONFIDENTIAL
-             <p >Wealth Profile</p>
-             <img id="logo"src="https://www.dropbox.com/s/6d7d15iiuar4rou/fs_bw.png?dl=1" top="25px">
-             </div>'), align = "center",
-               style='background-color:black'))),
-    div(style="text-align:center;position:relative;
-    font-family: 'Gotham Thin',Gotham;font-size:24px;
-    color: #000000;", textOutput("test")),
-    tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "style_fs.css")),
-    br(),br(),br(),
+    includeCSS("style_fs.css"),
+    HTML(
+        '<article>
+        <img id="logo"src="https://www.dropbox.com/s/6d7d15iiuar4rou/fs_bw.png?dl=1"
+        top="50px">
+        </article>'
+    ),
+    div(
+        br(),
+        class = "titleback",
+        br(),
+        div(class = "watermark", "PRIVATE AND CONFIDENTIAL"),
+        br(), br(),
+        div(class = "a", textOutput("test")),
+        br(), br(),
+        p(class = "b", "Wealth Profile"),
+        br()
+    ),
     tabsetPanel(
         tabPanel(
             "Net Worth",
@@ -73,34 +76,60 @@ ui <- fluidPage(
                 )
             ),
             fluidRow(
-                column(12, h4("Asset Details"), 
-                       bs_accordion(id = "statment2") %>%
-                           bs_set_opts(panel_type = "success", use_heading_link = TRUE) %>%
-                           bs_append(title = "Cash & Equivalents", show = "",
-                                     fluidRow(
-                                         column(6, reactableOutput("cash_equ")),
-                                         column(6, apexchartOutput("cash_equ2")))
-                           ) %>% 
-                           bs_append(title = "Merrill Lynch Savings", show = "",
-                                     fluidRow(
-                                         column(6, textOutput("ml_1")),
-                                         column(6, tableOutput("ml_2")))
-                           )
+                column(12, 
+                       p(class = "d", "Asset Details"),
+                       tags$details(
+                           tags$summary(
+                               "Cash & Equivalents"
+                           ),
+                           br(),
+                           div(class = "row",
+                               div(class = "col-md-5",
+                               div(id = "class-tables", reactableOutput("cash_equ"))),
+                               div(class = "col-md-2"),
+                               div(class = "col-md-6", apexchartOutput("cash_equ2"))),
+                           br(),
+                           div(id = "box-shadow",
+                               div(id="details-content",
+                                   tags$details(
+                                       tags$summary(
+                                           "Merrill Lynch Savings"
+                                       ),
+                                       br(),
+                                       div(class = "row",
+                                           div(class = "col-md-4",
+                                               div(class = "class-tables", textOutput("ml_1"))),
+                                           div(class = "col-md-5", tableOutput("ml_2")))
+                                   ),
+                                   br()
+                           ))
+                       )
                 )
             )
         ),
         tabPanel("Cash Flow Forecast",
-                 bsCollapse(id = "collapseExample", open = "",
-                            bsCollapsePanel("Cash Flow 2020", 
-                                            reactableOutput("cash_flow20"),
-                                            style = "success"),
-                            bsCollapsePanel("Cash Flow 2021", 
-                                            reactableOutput("cash_flow21"), 
-                                            style = "success")
-                 )
+            br(), br(),
+            tags$details(
+                tags$summary(
+                    "Cash Flow 2020"
+                ),
+                reactableOutput("cash_flow20")
+            ),
+            br(),br(),
+            tags$details(
+                tags$summary(
+                    "Cash Flow 2021"
+                ),
+                reactableOutput("cash_flow21")
+            )
         ),
         tabPanel("Structure",
-                 collapsibleTreeOutput("structure")
+                 div(class = "row",
+                     div(class = "col-md-1"),
+                     div(class = "col-md-10",
+                         collapsibleTreeOutput("structure"),
+                         div(class = "col-md-1")
+                    ))
         )
     )
 )
