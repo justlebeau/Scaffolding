@@ -23,11 +23,11 @@ ui <- fluidPage(
         tabPanel(
             "Net Worth",
             fluidRow(
-                column(4,
-                       div(style="text-align:Left;position:relative;
-                ont-family: 'Gotham Thin',Gotham;font-size:  20px;
-                color: #000000;border: 2px solid #989898;",
-                           textOutput("nworth")))
+                column(4, br(),br(),
+                       div(class = "nw",
+                           tags$span(
+                               textOutput("nworth")
+                           )))
             ),
             fluidRow(
                 column(3, h4("Assets"), reactableOutput("assets")),
@@ -100,8 +100,7 @@ ui <- fluidPage(
                                            div(class = "col-md-4",
                                                div(class = "class-tables", textOutput("ml_1"))),
                                            div(class = "col-md-5", tableOutput("ml_2")))
-                                   ),
-                                   br()
+                                   )
                            ))
                        )
                 )
@@ -125,6 +124,7 @@ ui <- fluidPage(
         ),
         tabPanel("Structure",
                  div(class = "row",
+                     br(),br(),
                      div(class = "col-md-1"),
                      div(class = "col-md-10",
                          collapsibleTreeOutput("structure"),
