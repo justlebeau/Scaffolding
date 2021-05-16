@@ -80,7 +80,7 @@ ui <- fluidPage(
                        p(class = "d", "Asset Details"),
                        tags$details(
                            tags$summary(
-                               "Cash & Equivalents"
+                               span("Cash & Equivalents", style="color:black")
                            ),
                            br(),
                            div(class = "row",
@@ -93,14 +93,15 @@ ui <- fluidPage(
                                div(id="details-content",
                                    tags$details(
                                        tags$summary(
-                                           "Merrill Lynch Savings"
+                                           span("Merrill Lynch Savings", style="color:black")
                                        ),
                                        br(),
                                        div(class = "row",
                                            div(class = "col-md-4",
                                                div(class = "class-tables", textOutput("ml_1"))),
                                            div(class = "col-md-5", tableOutput("ml_2")))
-                                   )
+                                   ),
+                                   br()
                            ))
                        )
                 )
@@ -110,14 +111,14 @@ ui <- fluidPage(
             br(), br(),
             tags$details(
                 tags$summary(
-                    "Cash Flow 2020"
+                    span("Cash Flow 2020", style="color:black")
                 ),
                 reactableOutput("cash_flow20")
             ),
             br(),br(),
             tags$details(
                 tags$summary(
-                    "Cash Flow 2021"
+                    span("Cash Flow 2021", style="color:black")
                 ),
                 reactableOutput("cash_flow21")
             )
